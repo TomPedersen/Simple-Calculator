@@ -49,10 +49,22 @@ namespace SimpleCalculator
         private void operator_Click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            operation = button.Text;
-            equationValue = Double.Parse(textBoxResults.Text);
-            labelCurrentOperation.Text = equationValue + " " + operation;
-            isOperationPerformed = true;
+
+            //Now the display will update between each operation as if the equals button had been clicked
+            if (equationValue != 0)
+            {
+                buttonEquals.PerformClick();
+                operation = button.Text;
+                labelCurrentOperation.Text = equationValue + " " + operation;
+                isOperationPerformed = true;
+            }
+            else
+            {
+                operation = button.Text;
+                equationValue = Double.Parse(textBoxResults.Text);
+                labelCurrentOperation.Text = equationValue + " " + operation;
+                isOperationPerformed = true;
+            }
 
         }
 

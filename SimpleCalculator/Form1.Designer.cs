@@ -164,6 +164,7 @@
             // buttonEquals
             // 
             this.buttonEquals.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEquals.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonEquals.Location = new System.Drawing.Point(215, 179);
             this.buttonEquals.Name = "buttonEquals";
             this.buttonEquals.Size = new System.Drawing.Size(54, 96);
