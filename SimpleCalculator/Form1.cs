@@ -51,5 +51,24 @@ namespace SimpleCalculator
             textBoxResults.Text = "0";
             equationValue = 0;
         }
+
+        private void buttonEquals_Click(object sender, EventArgs e)
+        {
+            switch (operation)
+            {
+                case "+":
+                    textBoxResults.Text = (equationValue + Double.Parse(textBoxResults.Text)).ToString();
+                    break;
+                case "-":
+                    textBoxResults.Text = (equationValue - Double.Parse(textBoxResults.Text)).ToString();
+                    break;
+                case "*":
+                    textBoxResults.Text = (equationValue * Double.Parse(textBoxResults.Text)).ToString();
+                    break;
+                case "/":
+                    textBoxResults.Text = (equationValue / Double.Parse(textBoxResults.Text)).ToString();
+                    break;
+            }
+        }
     }
 }

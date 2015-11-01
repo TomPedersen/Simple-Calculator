@@ -170,6 +170,7 @@
             this.buttonEquals.TabIndex = 14;
             this.buttonEquals.Text = "=";
             this.buttonEquals.UseVisualStyleBackColor = true;
+            this.buttonEquals.Click += new System.EventHandler(this.buttonEquals_Click);
             // 
             // buttonSubtract
             // 
