@@ -1,0 +1,1 @@
+c:\users\tom\Documents\GitHub\SimpleCalculator\SimpleCalculator\bin\Debug\SimpleCalculator.exe.config
