@@ -98,6 +98,8 @@ namespace SimpleCalculator
                     textBoxResults.Text = (equationValue / Double.Parse(textBoxResults.Text)).ToString();
                     break;
             }
+            equationValue = Double.Parse(textBoxResults.Text);
+            labelCurrentOperation.Text = "";
         }
     }
 }
