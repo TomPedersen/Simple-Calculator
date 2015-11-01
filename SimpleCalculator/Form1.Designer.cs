@@ -48,7 +48,7 @@
             this.buttonDecimal = new System.Windows.Forms.Button();
             this.buttonZero = new System.Windows.Forms.Button();
             this.textBoxResults = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelCurrentOperation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // buttonSeven
@@ -236,6 +236,7 @@
             this.buttonDecimal.TabIndex = 17;
             this.buttonDecimal.Text = ".";
             this.buttonDecimal.UseVisualStyleBackColor = true;
+            this.buttonDecimal.Click += new System.EventHandler(this.button_Click);
             // 
             // buttonZero
             // 
@@ -259,23 +260,22 @@
             this.textBoxResults.Text = "0";
             this.textBoxResults.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label1
+            // labelCurrentOperation
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.Window;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 24);
-            this.label1.TabIndex = 20;
-            this.label1.Text = "label1";
+            this.labelCurrentOperation.AutoSize = true;
+            this.labelCurrentOperation.BackColor = System.Drawing.SystemColors.Window;
+            this.labelCurrentOperation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCurrentOperation.Location = new System.Drawing.Point(11, 9);
+            this.labelCurrentOperation.Name = "labelCurrentOperation";
+            this.labelCurrentOperation.Size = new System.Drawing.Size(0, 24);
+            this.labelCurrentOperation.TabIndex = 20;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(280, 290);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelCurrentOperation);
             this.Controls.Add(this.textBoxResults);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonDecimal);
@@ -327,7 +327,7 @@
         private System.Windows.Forms.Button buttonDecimal;
         private System.Windows.Forms.Button buttonZero;
         private System.Windows.Forms.TextBox textBoxResults;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelCurrentOperation;
     }
 }
 

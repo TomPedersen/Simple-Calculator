@@ -14,6 +14,7 @@ namespace SimpleCalculator
     {
         private Double equationValue = 0;
         private string operation = "";
+        private bool isOperationPerformed = false;
 
         public Form1()
         {
@@ -22,14 +23,27 @@ namespace SimpleCalculator
 
         private void button_Click(object sender, EventArgs e)
         {
-            //To remove the default 0 in the textbox when any number is entered
-            if (textBoxResults.Text == "0")
+            Button button = (Button)sender;
+
+            //To remove the default 0 in the textbox when any number is entered and to clear field between each entry, e.g. 2 + 2 + 3 doesn't become 223.
+            if ((textBoxResults.Text == "0") || isOperationPerformed)
             {
                 textBoxResults.Clear();    
             }
 
-            Button button = (Button) sender;
-            textBoxResults.Text = textBoxResults.Text +button.Text;
+            //To prevent multiple consecutive decimals from being entered
+            if (button.Text == ".")
+            {
+                if (!textBoxResults.Text.Contains("."))
+                    textBoxResults.Text = textBoxResults.Text + button.Text;
+            }
+            else
+            {
+                textBoxResults.Text = textBoxResults.Text + button.Text;
+            }
+
+            
+            isOperationPerformed = false;
         }
 
         private void operator_Click(object sender, EventArgs e)
@@ -37,6 +51,9 @@ namespace SimpleCalculator
             Button button = (Button)sender;
             operation = button.Text;
             equationValue = Double.Parse(textBoxResults.Text);
+            labelCurrentOperation.Text = equationValue + " " + operation;
+            isOperationPerformed = true;
+
         }
 
         private void buttonClearEntry_Click(object sender, EventArgs e)
