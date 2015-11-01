@@ -1,1 +1,9 @@
 c:\users\tom\Documents\GitHub\SimpleCalculator\SimpleCalculator\bin\Debug\SimpleCalculator.exe.config
+c:\users\tom\Documents\GitHub\SimpleCalculator\SimpleCalculator\bin\Debug\SimpleCalculator.exe
+c:\users\tom\Documents\GitHub\SimpleCalculator\SimpleCalculator\bin\Debug\SimpleCalculator.pdb
+c:\users\tom\Documents\GitHub\SimpleCalculator\SimpleCalculator\obj\Debug\SimpleCalculator.csprojResolveAssemblyReference.cache
+c:\users\tom\Documents\GitHub\SimpleCalculator\SimpleCalculator\obj\Debug\SimpleCalculator.Form1.resources
+c:\users\tom\Documents\GitHub\SimpleCalculator\SimpleCalculator\obj\Debug\SimpleCalculator.Properties.Resources.resources
+c:\users\tom\Documents\GitHub\SimpleCalculator\SimpleCalculator\obj\Debug\SimpleCalculator.csproj.GenerateResource.Cache
+c:\users\tom\Documents\GitHub\SimpleCalculator\SimpleCalculator\obj\Debug\SimpleCalculator.exe
+c:\users\tom\Documents\GitHub\SimpleCalculator\SimpleCalculator\obj\Debug\SimpleCalculator.pdb
